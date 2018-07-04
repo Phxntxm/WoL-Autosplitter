@@ -12,17 +12,13 @@ state("WizardOfLegend")
 start
 {
 	if (old.stage == 0 && current.stage == 0 && old.level == 0 && current.level == 1)
-	{
 		return true;
-	}
 }
 
 reset
 {
 	if (current.stage == 0 && current.level == 0)
-	{
 		return true;
-	}
 }
 
 split
